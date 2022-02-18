@@ -1,0 +1,25 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+}
+/* ----header------ */
+
+.header__logo{
+
+}
+.menu__link{
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.carrousel{
+    display: flex;
+    justify-content: center;
+}
+.carrousel img{
+    width: 100%;
+}
