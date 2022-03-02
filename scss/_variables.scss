@@ -1,0 +1,19 @@
+
+/*----FONT----*/
+@font-face {
+    font-family: "AkzidenzGrotesk-Medium";
+    src: url("assets/font/AkzidenzGrotesk-Medium.otf");
+}
+@font-face {
+    font-family: "AkzidenzGrotesk-Regural";
+    src: url("assets/font/AkzidenzGrotesk-Regular.otf");
+}
+
+/*---VARIABLES---*/
+
+$violeta: #8D76D7;
+$violetaClaro: #DCDAEF;
+$naranja: #FF6B15;
+$fuente-textolectura:'Outfit', sans-serif;
+$fuente-destacados: 'AkzidenzGrotesk-Regural';
+$fuente-titulos: 'AkzidenzGrotesk-Medium';

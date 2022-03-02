@@ -5,53 +5,224 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ID MAG</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="/css-bt/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet" href="./css-bt/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crete+Round&family=Outfit:wght@200;300;400&display=swap" rel="stylesheet"> 
+    <script src="https://kit.fontawesome.com/38ba117a7e.js" crossorigin="anonymous"></script>
+        <!-- Link Swiper's CSS -->
+        <link
+        rel="stylesheet"
+        href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
 </head>
 <body>
-    <header>
-        <div class="header__logo">
-            <a href="./index.html"><img src="/assets/imagenes/logo.png" alt="logo id mag"></a>
-        </div>
-        <nav>
-            <ul class="menu__link">
-                <li><a href="/html/news.html">news</a></li>
-                <li><a href="/html/beauty.html">beauty</a></li>
-                <li><a href="/html/fashion.html">fashion</a></li>
-                <li><a href="/html/culture.html">culture</a></li>
-                <li><a href="/html/contact.html">contact us</a></li>
-            </ul>
-        </nav>
+    <header class="flex-row justify-content-around">
+        <section>
+            <div class="logo">
+                <a href="./index.html"><img src="./assets/imagenes/header/logo-white.svg" alt="logo id mag"></a>
+            </div>
+            <!-- <div class="shape">
+                <img src="./assets/imagenes/header/shape-logo.svg" alt="abstract shape">
+            </div> -->
+            <nav>
+                <ul class="nav__list">
+                    <img src="./assets/imagenes/header/shape-logo.svg" alt="abstract shape">
+                    <li class="nav__item"><a href="./news.html">news</a></li>
+                    <li class="nav__item"><a href="./beauty.html">beauty</a></li>
+                    <li class="nav__item"><a href="./fashion.html">fashion</a></li>
+                    <li class="nav__item"><a href="./culture.html">culture</a></li>
+                    <li class="nav__item"><a href="./contact.html">contact us</a></li>
+                </ul>
+            </nav>
+        </section>
     </header>
-    <section class="carrousel">
-        <div class="carrousel__izquierda">
-            <img src="/assets/imagenes/index/bjork.webp" alt="bjork new movie">
-            <h2>
-                Björk’s Viking thriller movie now has a trailer
-            </h2>
-            <h3>
-                ‘The Northman’ will be coming to cinemas next April, with the timeless Icelandic artist in a starring role. 
-            </h3>
-        </div>
-        <div class="carrousel__centro">
-            <img src="/assets/imagenes/index/chloe-cherry.webp" alt="chloe cherry euphoria">
-            <h2>
-                Meet Chloe Cherry, the adult film actress turned Euphoria star
-            </h2>
-            <h3>
-                The new star of Euphoria discusses her nuanced path to Hollywood, and why her past life in porn was the 'ultimate crash course' in acting.
-            </h3>
-        </div>
-        <div class="carrousel__derecha">
-            <img src="/assets/imagenes/index/kimk.webp" alt="kim kardashian">
-            <h2>
-                Kim Kardashian West: "People might not get that we're in on the joke"
-            </h2>
-            <h3>
-                America's most famous icon speaks to playwright Jeremy O. Harris about Skims, training as a lawyer and watching anime with her kids. 
-            </h3>
-        </div>
+    <section class="container">
+        <section class="row destacado">
+            <div class="col col-md-3 col-sm-8 justify-content-around destacado__izquierda">
+                <!-- <div class="rectangle1"></div> -->
+                <img src="./assets/imagenes/index/hoyeon.jpg" alt="hoyeon squid game">
+                <h2>
+                    Hoyeon on what Squid Game taught her about life
+                </h2>
+                <h3>
+                    The model and star of Netflix's biggest show ever is navigating the world of her new-found fame.
+                </h3>
+            </div>
+            <div class="col col-md-3 col-sm-8 justify-content-around destacado__centro">
+                <img src="./assets/imagenes/index/chloe-cherry.jpg" alt="chloe cherry euphoria">
+                <!-- <div class="rectangle2"></div> -->
+                <h2>
+                    Meet Chloe Cherry, the adult film actress turned Euphoria star
+                </h2>
+                <h3>
+                    The new star of Euphoria discusses her nuanced path to Hollywood, and why her past life in porn was the 'ultimate crash course' in acting.
+                </h3>
+            </div>
+            <div class="col col-md-3 col-sm-8 justify-content-around destacado__derecha">
+                <!-- <div class="rectangle3"></div> -->
+                <img src="./assets/imagenes/index/kimk-cover.jpg" alt="kim kardashian">
+                <h2>
+                    Kim Kardashian West: "People might not get that we're in on the joke"
+                </h2>
+                <h3>
+                    America's most famous icon speaks to playwright Jeremy O. Harris about Skims, training as a lawyer and watching anime with her kids. 
+                </h3>
+            </div>
+        </section>
     </section>
+    <!-- <section class="contenedor__noticiasprincipal">
+        <h2>
+            Today on I-D
+        </h2>
+        <section class="row">
+            <div class="col-md-2">
+                <img class="main__container__img" src="./assets/imagenes/beauty/beautyforwinter2021.webp" alt="">
+                <h2>Global beauty trends for winter 2021</h2>
+                <div>From a smoky eye in Guadalajara to temporary tattoos in Tokyo . five makeup artists share trends from their cities.</div>
+            </div>
+            <div class="col-md-2">
+                <img class="main__container__img" src="./assets/imagenes/cultura/7cultmovies.webp" alt="">
+                <h2>7 cult Christmas movies for people who hate Christmas</h2>
+                <div>From horror films to lighthearted classics, if you're feeling anxious about the holidays this year, we recommend finding comfort in these films.</div>
+            </div>
+            <div class="col-md-2">
+                <img class="main__container__img" src="./assets/imagenes/moda/KIMK.webp" alt="">
+                <h2>A guide to Kim Kardashian’s style evolution</h2>
+                <div>As she covers the winter 2021 issue of i-D, we chart Kim's rise from socialite stylist to the world’s best dressed lawyer.</div>
+            </div>
+            <div class="col-md-2">
+                <img class="main__container__img" src="./assets/imagenes/news/matrix.webp" alt="">
+                <h2>The Matrix 4 will also have a MetaHuman video game</h2>
+            <div>Here's our latest look at the anticipated sequel, featuring an iconic Reeves and Ricci link-up and a new PS5 and Xbox universe-bending game tie-in.</div>
+            </div>
+            <div class="col-md-2">
+                <img class="main__container__img" src="./assets/imagenes/beauty/nosejob.webp" alt="">
+                <h2>The curious rise of botched plastic surgery videos</h2>
+                <div>When life gives you a bad boob job, what do you do? If you're an influencer, you make a vlog about it, obviously. </div>
+            </div>
+        </section>
+    </div>
+    </section> -->
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                  <img class="main__container__img" src="./assets/imagenes/cultura/Gisela-McDaniel.webp" alt="Gisela Mcdaniel painting">
+                  <h2>The indigenous artist helping women and non-binary poc reclaim their bodies</h2>
+                  <h3>Gisela McDaniel's colorful paintings explore identity, familial roots and colonial violence, redefining portraiture through healing.</h3>
+              </div>
+              <div class="swiper-slide">
+                  <img class="main__container__img" src="./assets/imagenes/cultura/kia-and-mommy-2014.webp" alt="Kia Labeija artist New york">
+                  <h2>Kia Labeija's personal portrait of New York's ballroom scene</h2>
+                  <h3>The artist's new exhibit 'Prepare My Heart' is an authentic look at ball culture and life with HIV.</h3>
+              </div>
+              <div class="swiper-slide" role="group">
+                <img class="main__container__img" src="./assets/imagenes/cultura/pixiedreambf.webp" alt="maniac pixie dream girl boyfriend">
+                <h2>Are we living in the age of the Manic Pixie Dream Boyfriend? </h2>
+                <h3>Recent reports indicate yes!</h3>
+            </div>
+              <div class="swiper-slide" role="group">
+                  <img class="main__container__img" src="./assets/imagenes/moda/KIMK.webp" alt="Kim kardashian style icon">
+                  <h2>A guide to Kim Kardashian’s style evolution</h2>
+                  <h3>As she covers the winter 2021 issue of i-D, we chart Kim's rise from socialite stylist to the world’s best dressed lawyer.</h3>
+              </div>
+              <div class="swiper-slide">
+                  <img class="main__container__img" src="./assets/imagenes/news/matrix.webp" alt="matrix 4 metahuman game">
+                  <h2>The Matrix 4 will also have a MetaHuman video game</h2>
+                  <h3>Here's our latest look at the anticipated sequel, featuring an iconic Reeves and Ricci link-up and a new PS5 and Xbox universe-bending game tie-in.</h3>
+              </div>
+              <div class="swiper-slide">
+                  <img class="main__container__img" src="./assets/imagenes/beauty/nosejob.webp" alt="plastic surgery influencer">
+                  <h2>The curious rise of botched plastic surgery videos</h2>
+                  <h3>When life gives you a bad boob job, what do you do? If you're an influencer, you make a vlog about it, obviously. </h3>
+              </div>
+              <div class="swiper-slide">
+                <img class="main__container__img" src="./assets/imagenes/moda/MatthieuBlazy.webp" alt="matthiu Blazy bottega Venetas">
+                <h2>Matthieu Blazy makes his debut for Bottega Venetas</h2>
+                <h3>The French-Belgian designer’s AW22 collection for the house was his first since — and it was all about “craft in motion”.</h3>
+               </div>
+               <div class="swiper-slide">
+                <img class="main__container__img" src="./assets/imagenes/cultura/euphoria-fans-have-lots-of-theor.webp" alt="euphoria theories">
+                <h2>8 of the wildest Euphoria fan theories</h2>
+                <h3>Did Rue die in the very first episode? </h3>
+               </div>
+               <div class="swiper-slide">
+                <img class="main__container__img" src="./assets/imagenes/news/Labrinth-producer.webp" alt="labrinth euphoria producer music">
+                <h2>Labrinth says Nate’s Euphoria music was inspired by flamenco & Kanye</h2>
+                <h3>Ahead of the finale episode, we spoke to the legendary producer about creating music for the show without actually watching it first.</h3>
+               </div>
+               <div class="swiper-slide">
+                <img class="main__container__img" src="./assets/imagenes/moda/Catherine-Deneuve.webp" alt="catherine deneuve iconic outfits">
+                <h2>7 of Catherine Deneuve’s most iconic outfits</h2>
+                <h3>One of the 60s foremost style icons, the French actress was a muse to Yves Saint Laurent and David Bailey.</h3>
+               </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+      
+          <!-- Swiper JS -->
+          <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+      
+          <!-- Initialize Swiper -->
+          <script>
+            var swiper = new Swiper(".mySwiper", {
+              slidesPerView: 4,
+              spaceBetween: 20,
+              slidesPerGroup: 2,
+              loop: true,
+              loopFillGroupWithBlank: true,
+      
+              navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+              },
+            });
+          </script>
+    <footer>
+        <section class="container">
+            <div class="row">
+                <div class="col">
+                    <ul>
+                        <li>// store</li>
+                        <li>// legal</li>
+                        <li>// contact</li>
+                        <li>// about us</li>
+                        <li>// vice media privacy policy</li>
+                        <li>// manage my privacy settings</li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <div class="footer__newsletter">
+                        <form action="">
+                            <h3>Newsletter</h3>
+                            <h2>Sign up for i-d's regular newsletter updates.</h2>
+                            <input type="text" name="mail" id="mail" placeholder="Your email" required>
+                            <button type="submit" value="Subscribe" class="button__top"><span>Subscribe</span></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="footer__icons">
+                <a href="https://www.instagram.com/i_d/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://twitter.com/i_D"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.facebook.com/idmaglatam"><i class="fa-brands fa-facebook-square"></i></a>
+                <a href="https://i-donline.tumblr.com/"><i class="fa-brands fa-tumblr"></i></a>
+            </div>
+        </section>
+        <section class="footer__info">
+            <div>
+                <h3>&copy; 2022</h3>
+            </div>
+            <div>
+                <img src="./assets/imagenes/logo.png" alt="logo id mag">
+            </div>
+        </section>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="/js-bt/bootstrap.min.js"></script>
 </body>

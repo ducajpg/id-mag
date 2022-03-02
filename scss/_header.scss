@@ -1,0 +1,94 @@
+/*---HEADER---*/
+// header{
+//     width: 20 rem;
+//     height: auto;
+//     margin: 20px;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     justify-content: space-around;
+//     li{
+//         font-family: "AkzidenzGrotesk-Regural";
+//         font-size: 1.5rem;
+//         padding: 0.5rem;
+//         padding-top: 0.1rem;
+//         padding-right: 1rem;
+//         padding-bottom: 1rem;
+//         padding-left: 1rem;
+//         // display: flex;
+//         // justify-content: center;
+//         border-radius: 45px;
+//         border: 0.2rem solid $violeta;
+//         height: 2.8rem;
+//     }
+// }
+
+header{
+    nav{
+        ul{
+            width: 20 rem;
+            height: auto;
+            margin: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 2rem;
+            img{
+                width: 12%;
+                height: auto;
+                transition: ease-out 1s;
+                &:hover{
+                    animation: spin 10s linear infinite;
+                }
+            }
+            li{
+                font-family: "AkzidenzGrotesk-Regural";
+                font-size: 1.5rem;
+                padding: 0.5rem;
+                padding-top: 0.1rem;
+                padding-right: 1rem;
+                padding-bottom: 1rem;
+                padding-left: 1rem;
+                display: flex;
+                justify-content: center;
+                border-radius: 45px;
+                border: 0.2rem solid $violeta;
+                height: 2.8rem;
+                a{
+                    color: black;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+.logo img{
+    width: 8.5%;
+    height: auto;
+    position: absolute;
+    top: 52px;
+    left: 74px;
+}
+
+// .logo{
+//     width: 10%;
+//     height: auto;
+//     position: absolute;
+//     left: 3px;
+//     top: 3px;
+//     z-index: 1;
+// }
+// .shape{
+//     width: 10%;
+//     height: auto;
+//     margin-left: 3rem;
+//     margin-top: 2rem;
+//     position: absolute;
+//     left: 3px;
+//     top: 3px;
+//     z-index: 2;
+//     &:hover{
+//         animation: spin 10s linear infinite;
+//     }
+// }
