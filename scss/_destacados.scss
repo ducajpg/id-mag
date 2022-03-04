@@ -1,5 +1,17 @@
+
+
 .destacado{
+    h2{
+        @include textodestacado;
+    }
+    h3{
+        @include textolectura;
+    }
     img{
         border-style: solid;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        border: 3px solid #FF6B15; 
     }
 }

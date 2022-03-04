@@ -1,3 +1,5 @@
+
+/*---SWIPER SLIDE---*/
 html,
 body {
   height: 100%;
@@ -8,20 +10,20 @@ body{
   color: #000;
 }
 .swiper-slide{
-    h2{
-        font-size: 1.5rem;
-        width: 100%;
-        height: auto;
-        margin-top: 3.90px;
-        margin-bottom: 0px;
-      }
-      h3{
-          font-size: 1rem;
-          width: 100%;
-          height: auto;
-          margin-top: 3.90px;
-          margin-bottom: 0px;
-      }
+  h2{
+    @include textodestacado;
+    width: 100%;
+    height: auto;
+    margin-top: 3.90px;
+    margin-bottom: 0px;
+  }
+  h3{
+    @include textolectura;
+    width: 100%;
+    height: auto;
+    margin-top: 3.90px;
+    margin-bottom: 0px;
+  }
 }
 
 
@@ -37,36 +39,13 @@ body{
     display:flex;
     transition-property: transform;
 }
-/* .mySwiper{
-    padding: 48px;
-    box-sizing: border-box;
-    display: inline-block;
-    float: none;
-} */
 .swiper-slide {
-  /* background: #fff;
-  display: flex;
-  flex-direction: column;
-  align-content: flex-start;
-  width: 50px;
-  height: 220px;
-  margin-right: 48px; */
-  /*content box*/
-  /* box-sizing: content-box;
-  width: 355px;
-  height: 478px;
-  padding: 0px; */
   width: 350px;
   margin: 50px;
   margin-right: 150px;
   display: flex;
   flex-direction: column;
   padding: auto;
-  /* box-sizing: border-box;
-  display: inline-block;
-  float: none; */
-
-
 
   /* Center slide text vertically */
   display: -webkit-box;
@@ -82,22 +61,10 @@ body{
   -webkit-align-items: center;
   align-items: center;
 }
-/* .swiper-container-multirow>.swiper-wrapper {
-    flex-wrap:wrap
-}
-.swiper-container-multirow-column>.swiper-wrapper {
-    flex-wrap:wrap;
-    flex-direction:column
-} */
 
 .swiper-slide img {
-  /* display: block; */
-  /* width: 70%;
-  height: auto;
-  object-fit: contain; */
   vertical-align: middle;
   max-width: 100%;
-  /* vertical-align: middle; */
 }
 .swiper-button-next{
     margin: auto;

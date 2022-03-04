@@ -1,14 +1,4 @@
 
-// .main__container__item{
-//     grid-template-columns: 20% 20% 20% 20%;
-//     width: 100%;
-//     margin: 5rem;
-//     gap: 2rem; 
-//     a{
-//         text-decoration: none;
-//         color: black;
-//     }
-// }
 
 .contenedor__noticiasprincipal{
     .main__container__img{
@@ -16,32 +6,12 @@
     }
     margin: 5rem;
 } 
-.destacado{
+
+main{
     h2{
-        font-size: 1.5rem;
+        @include textodestacado;
     }
     h3{
-        font-size: 1rem;
+        @include textolectura;
     }
-}
-body{
-    main{
-        .main__container__item{
-            a{
-                text-decoration: none;
-                color: black;
-                img{
-                    width: 100%;
-                    height: auto;
-                }
-                h2{
-                    font-size: 1.5rem;
-                }
-                h3{
-                    font-size: 1rem;;
-                }
-            }
-        }
-    }
-
 }

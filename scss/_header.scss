@@ -24,6 +24,18 @@
 // }
 
 header{
+    position: sticky;
+    background-color: $violetaClaro;
+    margin: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    z-index: 999;
+    border-bottom: 3px solid #000;
+    overflow: hidden;
     nav{
         ul{
             width: 20 rem;

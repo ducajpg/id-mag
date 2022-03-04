@@ -1,55 +1,125 @@
-/*----FONT----*/
-@font-face {
-  font-family: "AkzidenzGrotesk-Medium";
-  src: url("assets/font/AkzidenzGrotesk-Medium.otf");
-}
-
-@font-face {
-  font-family: "AkzidenzGrotesk-Regural";
-  src: url("assets/font/AkzidenzGrotesk-Regular.otf");
-}
-
 /*---VARIABLES---*/
-@font-face {
-  font-family: "AkzidenzGrotesk-Medium";
-  src: url("./assets/font/AkzidenzGrotesk-Medium.otf.eot");
-  src: url("./assets/font/AkzidenzGrotesk-Medium.otf.eot?#iefix") format("embedded-opentype"), url("./assets/font/AkzidenzGrotesk-Medium.otf.woff") format("woff"), url("./assets/font/AkzidenzGrotesk-Medium.otf.ttf") format("truetype"), url("./assets/font/AkzidenzGrotesk-Medium.otf.svg#AkzidenzGrotesk-Medium") format("svg");
-  font-weight: normal;
-  font-style: normal;
+body {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
 }
 
-@font-face {
-  font-family: "AkzidenzGrotesk-Regural";
-  src: url("./assets/font/AkzidenzGrotesk-Regular.otf.eot");
-  src: url("./assets/font/AkzidenzGrotesk-Regular.otf.eot?#iefix") format("embedded-opentype"), url("./assets/font/AkzidenzGrotesk-Regular.otf.woff") format("woff"), url("./assets/font/AkzidenzGrotesk-Regular.otf.ttf") format("truetype"), url("./assets/font/AkzidenzGrotesk-Regular.otf.svg#AkzidenzGrotesk-Regural") format("svg");
-  font-weight: normal;
-  font-style: normal;
+main {
+  top: 150px;
+}
+
+.destacado h2 {
+  font-family: 'Archivo', sans-serif;
+  font-size: 1.3rem;
+}
+
+.destacado h3 {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1rem;
 }
 
 .destacado img {
   border-style: solid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  border: 3px solid #FF6B15;
 }
 
 /*---footer---*/
 footer {
   background-color: #8D76D7;
   color: white;
-  border-top: black;
+  border-top: .2rem solid #000;
+  border-bottom: .2rem solid #000;
 }
 
-footer .icons {
+footer .container {
+  font-size: 1rem;
+}
+
+.button__top {
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 2px solid;
+  border-left: 2px solid;
+  border-right: 2px solid;
+  border-radius: 0em;
+  padding: 0.60em 1em;
+  background: #fff;
+  color: #000;
+  -webkit-transform: translateY(-0.4em);
+          transform: translateY(-0.4em);
+  -webkit-transition: -webkit-transform 0.1s ease;
+  transition: -webkit-transform 0.1s ease;
+  transition: transform 0.1s ease;
+  transition: transform 0.1s ease, -webkit-transform 0.1s ease;
+}
+
+.button__top:hover {
+  /* Pull the button upwards when hovered */
+  -webkit-transform: translateY(-0.3em);
+          transform: translateY(-0.3em);
+}
+
+.button__top:active {
+  /* Push the button downwards when pressed */
+  -webkit-transform: translateY(5);
+          transform: translateY(5);
+}
+
+.footer__icons__row {
+  border-top: .2rem solid #000;
+  border-bottom: .2rem solid #000;
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+}
+
+.shape img {
+  width: 25px;
+  height: 25px;
+}
+
+.footer__icons {
   text-align: center;
-  letter-spacing: 2px;
-}
-
-footer .icons i {
+  text-decoration: none;
+  color: #FF6B15;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  padding-left: 20px;
+  padding-right: 20px;
   font-size: 30px;
   -webkit-transition: ease 0.2s all;
   transition: ease 0.2s all;
 }
 
-footer .icons i:hover {
+.footer__icons:hover {
   -webkit-transform: translateY(-10px);
+  color: #FF6B15;
+}
+
+.footer__newsletter {
+  border-left: .2rem solid #000;
+}
+
+.footer__newsletter h2 {
+  font-family: 'Archivo', sans-serif;
+  font-size: 1.3rem;
+}
+
+.footer__newsletter h3 {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1rem;
 }
 
 .contenedor__noticiasprincipal {
@@ -60,15 +130,33 @@ footer .icons i:hover {
   width: 100%;
 }
 
-.destacado h2 {
-  font-size: 1.5rem;
+main h2 {
+  font-family: 'Archivo', sans-serif;
+  font-size: 1.3rem;
 }
 
-.destacado h3 {
+main h3 {
+  font-family: 'Outfit', sans-serif;
   font-size: 1rem;
 }
 
 /*---HEADER---*/
+header {
+  position: -webkit-sticky;
+  position: sticky;
+  background-color: #DCDAEF;
+  margin: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+  z-index: 999;
+  border-bottom: 3px solid #000;
+  overflow: hidden;
+}
+
 header nav ul {
   width: 20 rem;
   height: auto;
@@ -132,18 +220,20 @@ header nav ul li a {
   left: 74px;
 }
 
+/*---SWIPER SLIDE---*/
 html,
 body {
   height: 100%;
 }
 
 body {
-  background: #eee;
+  background: #DCDAEF;
   color: #000;
 }
 
 .swiper-slide h2 {
-  font-size: 1.5rem;
+  font-family: 'Archivo', sans-serif;
+  font-size: 1.3rem;
   width: 100%;
   height: auto;
   margin-top: 3.90px;
@@ -151,6 +241,7 @@ body {
 }
 
 .swiper-slide h3 {
+  font-family: 'Outfit', sans-serif;
   font-size: 1rem;
   width: 100%;
   height: auto;
@@ -177,25 +268,7 @@ body {
   transition-property: transform, -webkit-transform;
 }
 
-/* .mySwiper{
-    padding: 48px;
-    box-sizing: border-box;
-    display: inline-block;
-    float: none;
-} */
 .swiper-slide {
-  /* background: #fff;
-  display: flex;
-  flex-direction: column;
-  align-content: flex-start;
-  width: 50px;
-  height: 220px;
-  margin-right: 48px; */
-  /*content box*/
-  /* box-sizing: content-box;
-  width: 355px;
-  height: 478px;
-  padding: 0px; */
   width: 350px;
   margin: 50px;
   margin-right: 150px;
@@ -205,9 +278,6 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   padding: auto;
-  /* box-sizing: border-box;
-  display: inline-block;
-  float: none; */
   /* Center slide text vertically */
   display: -webkit-box;
   display: -ms-flexbox;
@@ -220,21 +290,9 @@ body {
   align-items: center;
 }
 
-/* .swiper-container-multirow>.swiper-wrapper {
-    flex-wrap:wrap
-}
-.swiper-container-multirow-column>.swiper-wrapper {
-    flex-wrap:wrap;
-    flex-direction:column
-} */
 .swiper-slide img {
-  /* display: block; */
-  /* width: 70%;
-  height: auto;
-  object-fit: contain; */
   vertical-align: middle;
   max-width: 100%;
-  /* vertical-align: middle; */
 }
 
 .swiper-button-next {

@@ -3,63 +3,69 @@
 footer{
     background-color: $violeta;
     color: white;
+    border-top: .2rem solid #000;
+    border-bottom: .2rem solid #000;
     .container{
         font-size: 1rem;
-        .footer__icons{
-            text-align: center;
-            letter-spacing: 2px;
-            a{
-                i{
-                font-size: 30px;
-                transition: ease 0.2s all;
-                    &:hover{
-                        -webkit-transform: translateY(-10px)
-                    }
-                    a{
-                    text-decoration: none;
-                    color: white;
-                    }
-                }
-            }
-        }
-    div{
-        
     }
-    .footer__newsletter{
-        form{
-            button {
-            /* Variables */
-            --button_radius: 0em;
-            --button_color: #e8e8e8;
-            --button_outline_color: #000000;
-            font-size: 17px;
-            font-weight: bold;
-            border: none;
-            border-radius: var(--button_radius);
-            background: var(--button_outline_color);
-            .button_top {
-                display: block;
-                box-sizing: border-box;
-                border: 2px solid var(--button_outline_color);
-                border-left: 2px solid;
-                border-right: 2px solid;
-                border-radius: var(--button_radius);
-                padding: 0.75em 1.5em;
-                background: var(--button_color);
-                color: var(--button_outline_color);
-                transform: translateY(-0.4em);
-                transition: transform 0.1s ease;
-                    button:hover .button_top {
-                    /* Pull the button upwards when hovered */
-                    transform: translateY(-0.30em);
-                    }      
-                    button:active .button_top {
-                    /* Push the button downwards when pressed */
-                    transform: translateY(5);
-                    }
-                }
-            }
-        }
-    }
+    
 }
+
+.button__top{
+    display: block;
+    box-sizing: border-box;
+    border: 2px solid;
+    border-left: 2px solid;
+    border-right: 2px solid;
+    border-radius: 0em;
+    padding: 0.60em 1em;
+    background: #fff;
+    color: #000;
+    transform: translateY(-0.4em);
+    transition: transform 0.1s ease;
+    &:hover{
+        /* Pull the button upwards when hovered */
+        transform: translateY(-0.30em);
+    }     
+    &:active{
+        /* Push the button downwards when pressed */
+        transform: translateY(5);
+    }
+    
+}
+.footer__icons__row{
+    border-top: .2rem solid #000;
+    border-bottom: .2rem solid #000;
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+}
+.shape img{
+    width: 25px;
+    height: 25px;
+}
+.footer__icons{
+    text-align: center;
+    text-decoration: none;
+    color: $naranja;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 30px;
+    transition: ease 0.2s all;
+    &:hover{
+        -webkit-transform: translateY(-10px);
+        color: $naranja;
+    }        
+}
+
+.footer__newsletter{
+    border-left: .2rem solid #000;
+    h2{
+        @include textodestacado;
+    }
+    h3{
+        @include textolectura;
+    }
 }
