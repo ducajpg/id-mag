@@ -16,6 +16,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500&display=swap" rel="stylesheet"> 
+    <!-- SMOOCH -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Smooch+Sans&display=swap" rel="stylesheet">
     <!-- CSS -->
     <link rel="stylesheet" href="./css/estilos.css">
     <!-- bootstrap -->
@@ -28,25 +32,22 @@
 <body>
     <header class="flex-row justify-content-around">
         <section>
-            <div class="logo">
-                <a href="./index.html"><img src="./assets/imagenes/header/logo-white.svg" alt="logo id mag"></a>
-            </div>
-                <!-- <div class="shape">
-                    <img src="./assets/imagenes/header/shape-logo.svg" alt="abstract shape">
-                </div> -->
-            <nav>
+            <nav class="d-flex justify-content-evenly align-items-center">
                 <ul class="nav__list">
-                    <img src="./assets/imagenes/header/shape-logo.svg" alt="abstract shape">
-                    <li class="nav__item"><a href="./news.html">news</a></li>
-                    <li class="nav__item"><a href="./music.html">music</a></li>
-                    <li class="nav__item"><a href="./fashion.html">fashion</a></li>
-                    <li class="nav__item"><a href="./culture.html">culture</a></li>
-                    <li class="nav__item"><a href="./contact.html">contact us</a></li>
+                    <li class="nav__item d-sm-flex"><a href="./news.html">NEWS</a></li>
+                    <li class="nav__item d-sm-flex"><a href="./music.html">MUSIC</a></li>
+                    <a href="./index.html"><img src="./assets/imagenes/recursos/shape-id.png" alt="shape logo"></a>
+                    <li class="nav__item d-sm-flex"><a href="./fashion.html">FASHION</a></li>
+                    <li class="nav__item d-sm-flex"><a href="./culture.html">CULTURE</a></li>
+                    <li class="nav__item d-sm-flex"><a href="./contact.html">CONTACT US</a></li>
                 </ul>
             </nav>
         </section>
     </header>
         <main class="container mh-auto w-auto">
+            <div class="container__title">
+                <h3>MUSIC</h3>
+            </div>
             <section class="row">
                 <div class="col-12 col-xl-3 col-xxl-3 col-lg-4 col-md-6 col-sm-10">
                     <img class="img-fluid" src="./assets/imagenes/beauty/1645185356151-f8f4c427-fdcb-4283-8907-bc1cf47fad36.webp" alt="Charli XCX">
@@ -128,13 +129,18 @@
                     <form action="">
                         <h2>Newsletter</h2>
                         <h3>Sign up for i-d's regular newsletter updates.</h3>
+                        <div class="d-flex flex-row justify-content-center footer__button">
                         <input type="text" name="mail" id="mail" placeholder="Your email" required>
-                        <button type="submit" value="Subscribe" class="button__top"><span>Subscribe</span></button>
+                        <div class="footer__button">
+                            <button type="submit" value="Subscribe" class="button__top"><span>Subscribe</span></button>
+                        </div>
+                    </div>
                     </form>
                 </div>
             </div>
         </div>
-        <section class="d-flex flex-row justify-content-center align-items-center footer__icons__row">
+    </section>
+    <section class="d-flex flex-row justify-content-center align-items-center footer__icons__row">
             <img class="shape" src="./assets/imagenes/recursos/shape-escalada.png" alt="abstract shape">
             <a class="footer__icons" href="https://www.instagram.com/i_d/"><i class="fa-brands fa-instagram"></i></a>
             <a class="footer__icons" href="https://twitter.com/i_D"><i class="fa-brands fa-twitter"></i></a>

@@ -1,5 +1,7 @@
 
-
+body{
+    background-color: $violetaClaro;
+}
 .destacado{
     h2{
         @include textodestacado;

@@ -14,6 +14,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500&display=swap" rel="stylesheet"> 
+    <!-- SMOOCH -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Smooch+Sans&display=swap" rel="stylesheet">
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="./css/estilos.css">
@@ -27,20 +31,14 @@
 <body>
     <header class="flex-row justify-content-around">
         <section>
-            <div class="logo">
-                <a href="./index.html"><img src="./assets/imagenes/header/logo-white.svg" alt="logo id mag"></a>
-            </div>
-            <!-- <div class="shape">
-                <img src="./assets/imagenes/header/shape-logo.svg" alt="abstract shape">
-            </div> -->
-            <nav>
+            <nav class="d-flex justify-content-evenly align-items-center">
                 <ul class="nav__list">
-                    <img src="./assets/imagenes/header/shape-logo.svg" alt="abstract shape">
-                    <li class="nav__item"><a href="./news.html">news</a></li>
-                    <li class="nav__item"><a href="./music.html">music</a></li>
-                    <li class="nav__item"><a href="./fashion.html">fashion</a></li>
-                    <li class="nav__item"><a href="./culture.html">culture</a></li>
-                    <li class="nav__item"><a href="./contact.html">contact us</a></li>
+                    <li class="nav__item d-sm-flex"><a href="./news.html">NEWS</a></li>
+                    <li class="nav__item d-sm-flex"><a href="./music.html">MUSIC</a></li>
+                    <a href="./index.html"><img src="./assets/imagenes/recursos/shape-id.png" alt="shape logo"></a>
+                    <li class="nav__item d-sm-flex"><a href="./fashion.html">FASHION</a></li>
+                    <li class="nav__item d-sm-flex"><a href="./culture.html">CULTURE</a></li>
+                    <li class="nav__item d-sm-flex"><a href="./contact.html">CONTACT US</a></li>
                 </ul>
             </nav>
         </section>
@@ -79,39 +77,6 @@
             </div>
         </section>
     </section>
-    <!-- <section class="contenedor__noticiasprincipal">
-        <h2>
-            Today on I-D
-        </h2>
-        <section class="row">
-            <div class="col-md-2">
-                <img class="main__container__img" src="./assets/imagenes/beauty/beautyforwinter2021.webp" alt="">
-                <h2>Global beauty trends for winter 2021</h2>
-                <div>From a smoky eye in Guadalajara to temporary tattoos in Tokyo . five makeup artists share trends from their cities.</div>
-            </div>
-            <div class="col-md-2">
-                <img class="main__container__img" src="./assets/imagenes/cultura/7cultmovies.webp" alt="">
-                <h2>7 cult Christmas movies for people who hate Christmas</h2>
-                <div>From horror films to lighthearted classics, if you're feeling anxious about the holidays this year, we recommend finding comfort in these films.</div>
-            </div>
-            <div class="col-md-2">
-                <img class="main__container__img" src="./assets/imagenes/moda/KIMK.webp" alt="">
-                <h2>A guide to Kim Kardashian’s style evolution</h2>
-                <div>As she covers the winter 2021 issue of i-D, we chart Kim's rise from socialite stylist to the world’s best dressed lawyer.</div>
-            </div>
-            <div class="col-md-2">
-                <img class="main__container__img" src="./assets/imagenes/news/matrix.webp" alt="">
-                <h2>The Matrix 4 will also have a MetaHuman video game</h2>
-            <div>Here's our latest look at the anticipated sequel, featuring an iconic Reeves and Ricci link-up and a new PS5 and Xbox universe-bending game tie-in.</div>
-            </div>
-            <div class="col-md-2">
-                <img class="main__container__img" src="./assets/imagenes/beauty/nosejob.webp" alt="">
-                <h2>The curious rise of botched plastic surgery videos</h2>
-                <div>When life gives you a bad boob job, what do you do? If you're an influencer, you make a vlog about it, obviously. </div>
-            </div>
-        </section>
-    </div>
-    </section> -->
         <!-- Swiper -->
         <div class="swiper mySwiper">
             <div class="swiper-wrapper">
@@ -206,15 +171,18 @@
                     <form action="">
                         <h2>Newsletter</h2>
                         <h3>Sign up for i-d's regular newsletter updates.</h3>
-                        <div>
+                        <div class="d-flex flex-row justify-content-center footer__button">
                         <input type="text" name="mail" id="mail" placeholder="Your email" required>
-                        <button type="submit" value="Subscribe" class="button__top"><span>Subscribe</span></button>
+                        <div class="footer__button">
+                            <button type="submit" value="Subscribe" class="button__top"><span>Subscribe</span></button>
                         </div>
+                    </div>
                     </form>
                 </div>
             </div>
         </div>
-        <section class="d-flex flex-row justify-content-center align-items-center footer__icons__row">
+    </section>
+    <section class="d-flex flex-row justify-content-center align-items-center footer__icons__row">
             <img class="shape" src="./assets/imagenes/recursos/shape-escalada.png" alt="abstract shape">
             <a class="footer__icons" href="https://www.instagram.com/i_d/"><i class="fa-brands fa-instagram"></i></a>
             <a class="footer__icons" href="https://twitter.com/i_D"><i class="fa-brands fa-twitter"></i></a>

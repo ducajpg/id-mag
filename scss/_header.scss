@@ -1,31 +1,9 @@
 /*---HEADER---*/
-// header{
-//     width: 20 rem;
-//     height: auto;
-//     margin: 20px;
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     justify-content: space-around;
-//     li{
-//         font-family: "AkzidenzGrotesk-Regural";
-//         font-size: 1.5rem;
-//         padding: 0.5rem;
-//         padding-top: 0.1rem;
-//         padding-right: 1rem;
-//         padding-bottom: 1rem;
-//         padding-left: 1rem;
-//         // display: flex;
-//         // justify-content: center;
-//         border-radius: 45px;
-//         border: 0.2rem solid $violeta;
-//         height: 2.8rem;
-//     }
-// }
+
 
 header{
     position: sticky;
-    background-color: $violetaClaro;
+    background-color: #fff;
     margin: 0;
     top: 0;
     left: 0;
@@ -47,7 +25,7 @@ header{
             justify-content: flex-start;
             gap: 2rem;
             img{
-                width: 12%;
+                width: 90%;
                 height: auto;
                 transition: ease-out 1s;
                 &:hover{
@@ -55,17 +33,16 @@ header{
                 }
             }
             li{
-                font-family: "AkzidenzGrotesk-Regural";
-                font-size: 1.5rem;
+                font-family: 'Outfit', sans-serif;
+                font-size: 1.1rem;
                 padding: 0.5rem;
-                padding-top: 0.1rem;
                 padding-right: 1rem;
                 padding-bottom: 1rem;
                 padding-left: 1rem;
                 display: flex;
                 justify-content: center;
                 border-radius: 45px;
-                border: 0.2rem solid $violeta;
+                border: 0.15rem solid $violeta;
                 height: 2.8rem;
                 a{
                     color: black;
@@ -82,25 +59,3 @@ header{
     top: 52px;
     left: 74px;
 }
-
-// .logo{
-//     width: 10%;
-//     height: auto;
-//     position: absolute;
-//     left: 3px;
-//     top: 3px;
-//     z-index: 1;
-// }
-// .shape{
-//     width: 10%;
-//     height: auto;
-//     margin-left: 3rem;
-//     margin-top: 2rem;
-//     position: absolute;
-//     left: 3px;
-//     top: 3px;
-//     z-index: 2;
-//     &:hover{
-//         animation: spin 10s linear infinite;
-//     }
-// }
